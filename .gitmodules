@@ -1,0 +1,10 @@
+[submodule "vendor/glfw"]
+	path = vendor/glfw
+	url = https://github.com/glfw/glfw
+	branch = 3.3-stable
+[submodule "vendor/cglm"]
+	path = vendor/cglm
+	url = https://github.com/recp/cglm
+[submodule "vendor/Vulkan-Headers"]
+	path = vendor/Vulkan-Headers
+	url = https://github.com/KhronosGroup/Vulkan-Headers
