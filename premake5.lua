@@ -1,8 +1,7 @@
--- premake5.lua
-workspace "Magmat"
+workspace "magmatis"
    configurations { "Debug", "Release" }
 
-project "Magmat"
+project "magmatis"
    kind "WindowedApp"
    language "C"
    targetdir "bin/%{cfg.buildcfg}"
