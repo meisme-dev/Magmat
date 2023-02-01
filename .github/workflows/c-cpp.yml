@@ -5,13 +5,14 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: abel0b/setup-premake@v2.2
-      - with:
+        with:
          version: 5.0
       - uses: actions/checkout@v3
       - run: premake5 gmake2
