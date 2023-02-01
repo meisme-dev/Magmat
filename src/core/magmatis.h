@@ -3,14 +3,14 @@
 
 #include <GLFW/glfw3.h>
 
-typedef struct Program Program;
+typedef struct Magmatis Magmatis;
 
-struct Program {
+struct Magmatis {
     GLFWwindow *window;
-    int (*cleanup)(struct Program *self);
+    int (*cleanup)(struct Magmatis *self);
 };
 
-Program *_program__new(unsigned int w, unsigned int h, char *title);
+Magmatis *_program__new(unsigned int w, unsigned int h, char *title);
 
 #ifndef USE_LONG_NAMES_PROGRAM
 #define new_program(...) _program__new(__VA_ARGS__)

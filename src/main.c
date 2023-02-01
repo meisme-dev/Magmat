@@ -1,12 +1,12 @@
-#include "core/program.h"
+#include "core/magmatis.h"
 #include "program_info.h"
 
 int main() {
-    Program *program = new_program(DEFAULT_W, DEFAULT_H, PROGRAM_NAME);
+    Magmatis *magmatis = new_program(DEFAULT_W, DEFAULT_H, PROGRAM_NAME);
 
-    while(!glfwWindowShouldClose(program->window)) {
+    while(!glfwWindowShouldClose(magmatis->window)) {
         glfwPollEvents();
     }
     
-    return program->cleanup(program);
+    return magmatis->cleanup(magmatis);
 }
