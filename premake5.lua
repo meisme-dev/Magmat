@@ -5,7 +5,7 @@ project "magmatis"
    kind "WindowedApp"
    language "C"
    targetdir "bin/%{cfg.buildcfg}"
-   links { "glfw" }
+   links { "glfw", "vulkan" }
    files { "src/**.h", "src/**.c" }
 
    filter "configurations:Debug"
