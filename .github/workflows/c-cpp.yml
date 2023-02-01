@@ -17,6 +17,6 @@ jobs:
           fileName: premake-5.0.0-beta2-linux.tar.gz
           tag: v5.0.0-beta2
       - uses: actions/checkout@v3
-      - run: tar xf premake-5.0.0-beta2-linux.tar.gz
+      - run: tar xf /home/runner/work/magmatis/magmatis/premake-5.0.0-beta2-linux.tar.gz
       - run: ./premake5 gmake2
       - run: make
