@@ -11,8 +11,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: robinraju/release-downloader@v1.7
+        with:
+          repository: https://github.com/premake/premake-core
+          fileName: premake-5.0.0-beta2-linux.tar.gz
+          tag: 5.0.0-beta2
       - uses: actions/checkout@v3
-      - run: curl https://github.com/premake/premake-core/releases/download/v5.0.0-beta2/premake-5.0.0-beta2-linux.tar.gz -o premake.tar.gz
-      - run: tar xf premake.tar.gz
+      - run: tar xf premake-5.0.0-beta2-linux.tar.gz
       - run: ./premake5 gmake2
       - run: make
