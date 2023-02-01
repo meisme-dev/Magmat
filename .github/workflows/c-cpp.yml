@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: abel0b/setup-premake@v2.2
         with:
-         version: 5.0
+         version: 5.0.0-beta2
       - uses: actions/checkout@v3
       - run: premake5 gmake2
       - run: make
