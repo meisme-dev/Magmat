@@ -15,5 +15,5 @@ jobs:
         with:
          version: 5.0.0-beta2
       - uses: actions/checkout@v3
-      - run: premake5 gmake2
+      - run: premake gmake2
       - run: make
