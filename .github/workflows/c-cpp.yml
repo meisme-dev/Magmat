@@ -11,9 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: abel0b/setup-premake@v2.2
-        with:
-         version: 5.0.0-beta2
       - uses: actions/checkout@v3
-      - run: premake gmake2
+      - run: curl https://github.com/premake/premake-core/releases/download/v5.0.0-beta2/premake-5.0.0-beta2-linux.tar.gz -o premake.tar.gz
+      - run: tar xf premake.tar.gz
+      - run: ./premake5 gmake2
       - run: make
