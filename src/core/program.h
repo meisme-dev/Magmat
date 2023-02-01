@@ -1,6 +1,7 @@
 #ifndef APP_H
 #define APP_H
 
+#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
 typedef struct Program Program;
